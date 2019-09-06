@@ -5,28 +5,95 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Bio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <script src="assets/javascript/portfolio.js"></script>
 </head>
 
 <body>
 
-    <header id="main-header">
-        <h1>Matthew D. McGee</h1>
-        <nav>
-            <a href="index.html">About</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="contact.html">Contact</a>
+    <header id="toolbar">
+        <nav class="toolbar-navigation">
+            <button class="toggle-button" onclick="openNav()">
+                <div class="toggle-button-line"></div>
+                <div class="toggle-button-line"></div>
+                <div class="toggle-button-line"></div>
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">About</a>
+                    <a href="#">Services</a>
+                    <a href="#">Clients</a>
+                    <a href="#">Contact</a>
+                </div>
+            </button>
+            <a href="index.html" class="toolbar-logo">Matthew McGee</a>
+            <div class="spacer"></div>
+            <div class="toolbar-navigation-items">
+                <!-- <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a> -->
+            </div>
         </nav>
     </header>
 
-    <section id="main-bio">
-        <img src="" alt="Matthew D. McGee">
-        <p>My name is Matthew McGee.</p>
-    </section>
+    <div id="main-container" class="container">
+        <section id="main-bio">
+            <h1>Meet The Developer</h1>
+            <img id="bio-image" src="https://placehold.it/200x200" alt="Matthew McGee">
+            <p>My name is Matthew McGee. I'm a certified full-stack web devloper educated at Case Western Reserve
+                University. I received my certificate in April of 2019. I have a passion for front end development.
+                Together we can take your business to the next level.
+            </p>
+        </section>
+    
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/Hangman.jpg" alt="Hangman">
+                <h3><a class="projectLinks" href="https://thenuttyirishman.github.io/Word-Guess-Game/" target="_blank" >Hangman</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/crystalCollector.png" alt="Crystal Collector">
+                <h3><a class="projectLinks" href="https://thenuttyirishman.github.io/unit-4-game/" target="_blank" >Crystal Collector</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/TrainScheduler.png" alt="Train Scheduler">
+                <h3><a class="projectLinks" href="https://thenuttyirishman.github.io/Train-Scheduler/" target="_blank" >Train Scheduler</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/VideoGameTrivia.png" alt="Video Game Trivia">
+                <h3><a class="projectLinks" href="https://thenuttyirishman.github.io/triviagame/" target="_blank" >Video Game Trivia</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/comingSoon.jpg" alt="Super Hero Giphy Generator">
+                <h3><a class="projectLinks" href="https://thenuttyirishman.github.io/GifTastic/" target="_blank">Giphy Generator</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="./assets/images/ClickyGame.png" alt="Clicky Game">
+                <h3><a class="projectLinks" href="https://mattsclickygame.herokuapp.com/" target="_blank">Clicky Game</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="https://placehold.it/200x200" alt="">
+                <h3><a class="projectLinks" href="" target="_blank">Coming Soon</a></h3>
+            </div>
+            <div class="assignments">
+                <img class="placeholders" src="https://placehold.it/200x200" alt="">
+                <h3><a class="projectLinks" href="" target="_blank">Coming Soon</a></h3>
+            </div>
+        </section>
+    </div>
 
     <footer>
-        &copy; Copyright 2019 Matthew McGee
+        <div class="container">
+            <section id="links">
+                <a href="https://www.facebook.com/matt.uzell" class="fa fa-facebook" target="_blank"></a>
+                <a href="https://github.com/thenuttyirishman" class="fa fa-github" target="_blank"></a>
+                <a href="https://www.instagram.com/datnuccauzi/?hl=en" class="fa fa-instagram" target="_blank"></a>
+                <a href="https://www.linkedin.com/in/matthew-mcgee-24727210b/" class="fa fa-linkedin" target="_blank"></a>
+                <a href="https://twitter.com/uzifknbaby" class="fa fa-twitter" target="_blank"></a>
+            </section>
+        </div>
     </footer>
 
 </body>
